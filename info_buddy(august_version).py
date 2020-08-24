@@ -155,20 +155,11 @@ def add_info():
     lb.config(font=("Courier", 15))
     lb.pack()
 
-
-
- 
     lb2 = Label(mp1, text='name', fg='black', bg=g)
     lb2.pack()
 
     en_name = Entry(mp1, bd=2, bg=w)
     en_name.pack()
-
-
-
-
-
-
 
     lb5 = Label(mp1, text='pay', fg='black', bg=g)
     lb5.pack()
@@ -179,8 +170,6 @@ def add_info():
     def confirm():
      
         info1 = en_name.get()
-      
-      
         info2 = en_pay.get()
         info3 = datetime.now()
 
@@ -223,6 +212,5 @@ def add_info():
     mp.destroy()
 
     mp1.mainloop()
-
 
 main_menu()
