@@ -3,6 +3,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 
+
 class MainApp(App):
     def build(self):
         self.operators = ["/", "*", "+", "-"]
@@ -10,7 +11,7 @@ class MainApp(App):
         self.last_button = None
         main_layout = BoxLayout(orientation="vertical")
         self.solution = TextInput(
-            multiline=False, readonly=True, halign="right", font_size=55
+            multiline=False, readonly=True, halign="right", font_size= 90
         )
         main_layout.add_widget(self.solution)
         buttons = [
@@ -18,7 +19,7 @@ class MainApp(App):
             ["4", "5", "6", "*"],
             ["1", "2", "3", "-"],
             [".", "0", "C", "+"],
-            ["G", "U", "Y", "^^"],
+            ["", "", "", "^^"],
         ]
         for row in buttons:
             h_layout = BoxLayout()
@@ -46,6 +47,12 @@ class MainApp(App):
         if button_text == "C":
             # Clear the solution widget
             self.solution.text = ""
+
+        elif button_text == "^^":
+            # Show the maker name
+            
+            self.solution.text = "mr.guy thongtrachoo"
+
         else:
             if current and (
                 self.last_was_operator and button_text in self.operators):
@@ -65,6 +72,7 @@ class MainApp(App):
         if text:
             solution = str(eval(self.solution.text))
             self.solution.text = solution
+
 
 
 if __name__ == "__main__":
