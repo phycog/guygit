@@ -1,0 +1,17 @@
+
+if do not count (str,int,float,complex etc...)
+
+there are 4 main type of data in python that can be adapt to be data structure that you want
+4 type that i mean i will think that it is like "datagroup"
+
+----------------------------------------------------------------------------------------------------
+
+NAME IN PYTHON                               type of data structure (that it can be)               
+
+1. --list--                                  array , linklist , stack , queue 
+2. --set--                                    set
+3. --tuple--                                     -
+4. --dictionary--                               hashtable
+
+** some type of data structure we can make it with OOP or fuction statement.
+
