@@ -10,7 +10,7 @@ chance = ["head","tail"]
 
 i = 1
 
-while i <= 1000000:
+while i <= 45000:
     res = random.randint(1,2)
     if res == 1:
         head.append("head")

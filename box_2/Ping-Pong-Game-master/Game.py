@@ -14,7 +14,7 @@ win = t.Screen()    # creating a window
 win.title("Ping-Pong Game") # Giving name to the game.
 win.bgcolor('black')    # providing color to the HomeScreen
 win.setup(width=800,height=600) # Size of the game panel 
-win.tracer(0)   # which speed up's the game.
+win.tracer(-2)   # which speed up's the game.
 
 # Creating left paddle for the game
 
