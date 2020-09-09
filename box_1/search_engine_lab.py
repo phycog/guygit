@@ -20,7 +20,7 @@ for x in all_stud:
 i = 0
 
 
-while i <= 99999:
+while i <= 10000:
  if all_stud[i] == "guy ":
 
   print("index of guy : "+str(i))
