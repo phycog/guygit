@@ -31,10 +31,9 @@ class Node:
             self.right.PrintTree()
 
 # Use the insert method to add nodes
-root = Node(19)
-root.insert(5)
-root.insert(2)
-root.insert(34)
-root.insert(65)
+root = Node(12)
+root.insert(6)
+root.insert(14)
+root.insert(3)
 
 root.PrintTree()
