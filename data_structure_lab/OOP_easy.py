@@ -7,11 +7,13 @@ class Car:
   numOfseats = 4  # จำนวนเบาะนั่ง
   maxSpeed = 0
   numberOfcar = 0
+  stock = list()
   
   def __init__(self, color, brand, maxSpeed):
     self.color = color
     self.brand = brand
     self.maxSpeed    = maxSpeed
+    self.stock.append(self.color)
   
   # Methods
   def setColor(self,c):
@@ -33,3 +35,4 @@ car1 = Car("blue","Honda",250)
 car1.printData()
 car1.setColor("Goldrose")
 print("After set color :",car1.color)
+print(car1.stock)
