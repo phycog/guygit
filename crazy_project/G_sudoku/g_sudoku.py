@@ -86,7 +86,7 @@ def shape():
 
 
 d = 0
-while d <= 2:
+while d <= 5:
     shape()
     d = d+1
 
